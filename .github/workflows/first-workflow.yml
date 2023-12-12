@@ -13,7 +13,7 @@ jobs:
     needs: job1
     steps:
       - name: Cowsays
-        uses: actions/cowsay@v1
+        uses: mscoutermarsh/cowsays-action@v1
         with:
           text: Ready for prod–ship it!
           color: magenta
