@@ -22,11 +22,11 @@ jobs:
         dotnet-version: 6.0.x
 
     - name: Restore dependencies
-      run: dotnet restore .\Application\src\RazorPagesTestSample --no-cache
+      run: dotnet restore .\Application\src\RazorPagesTestSample\RazorPagesTestSample.csproj --no-cache
 
     - name: Build
-      run: dotnet build .\Application\src\RazorPagesTestSample --no-restore
+      run: dotnet build .\Application\src\RazorPagesTestSample\RazorPagesTestSample.csproj --no-restore
 
     - name: Test
-      run: dotnet test .\Application\tests\RazorPagesTestSample --no-build --verbosity normal
+      run: dotnet test \.Application\tests\RazorPagesTestSample.Tests\RazorPagesTestSample.Tests.csproj --no-build --verbosity normal
  
