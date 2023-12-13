@@ -21,4 +21,4 @@ jobs:
               with:
                     subscriptionId: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
                     resourceGroupName: ${{ secrets.AZURE_RESOURCE_GROUP_NAME }}
-                    template: ./path/to/bicep-template.bicep
+                    template: .\InfrastructureAsCode\main.bicep
