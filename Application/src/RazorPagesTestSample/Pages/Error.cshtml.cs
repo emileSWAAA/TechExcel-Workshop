@@ -20,6 +20,5 @@ namespace RazorPagesTestSample.Pages
             RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier;
         }
 
-        //test
     }
 }
