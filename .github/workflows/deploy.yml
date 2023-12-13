@@ -2,11 +2,14 @@ name: Deploy to Azure
 
 on:
     workflow_dispatch:
-        inputs:
-            environment:
-                description: 'Environment to deploy to'
-                required: true
-                default: 'dev'
+      inputs:
+        appenv:
+          type: choice
+          description: 'Choose the target environment'
+          options: 
+            - dev
+            - test
+            - prod
 
 jobs:
     deploy:
